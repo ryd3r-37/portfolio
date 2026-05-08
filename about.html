@@ -1,91 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juliane Cyruz Diaz | Web Portfolio</title>
-        <style>
-        
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            min-height: 100vh;
-            padding: 1.5rem;
-            line-height: 1.6;
-            background: #f1e2cc;
-            color: #2f2b27;
-        }
-        .page {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        nav {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            background: #fff;
-            border: 1px solid #d6bfa7;
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-        }
-        nav a {
-            color: #2f2b27;
-            text-decoration: none;
-            padding: 0.6rem 1rem;
-            border-radius: 0.5rem;
-            background: #efe0d2;
-            transition: background 0.2s ease;
-        }
-        nav a:hover {
-            background: #e1c9b0;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            align-items: center;
-            margin-top: 1.5rem;
-        }
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 1px solid #d6bfa7;
-            background: #fff;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        section {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 0.5rem;
-            border: 1px solid #e1cdbe;
-        }
-    </style>
-    </head>
-    <body>
-        <div class="page">
-            <nav>
-                <a href="Untitled-1.html">About Me</a>
-                <a href="Untitled-2.html">Certifications</a>
-                <a href="socials.html">Socials</a>
-            </nav>
-            <div class="hero">
-                <img src="me.jpg" alt="Juliane Cyruz Diaz" class="profile-photo">
-                <div>
-                    <h1>About Me</h1>
-                    <p>Hello, my name is Juliane Cyruz Diaz.</p>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Juliane Cyruz Diaz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="techstack.html">Tech Stack</a>
+            <a href="certifications.html">Certifications</a>
+        </nav>
+
+        <div class="hero">
+            <img src="me.jpg" alt="Juliane Cyruz Diaz" class="profile-photo">
+            <div>
+                <h1>About Me</h1>
+                <p>Hello, my name is Juliane Cyruz Diaz.</p>
             </div>
-            <section>
-                <h2>What do I do in school and outside school?</h2>
-                <p>I do music and sing a lot. I also play games and enjoy creative activities.</p>
-                <p>In school, I like expressing myself through different activities and sharing my ideas.</p>
-            </section>
         </div>
-    </body>
+
+        <section>
+            <h2 class="section-header">Wanna Know More About Me?</h2>
+    <hr class="card-separator">
+    
+    <p class="justified-text">
+        As an IT student specializing in Database Management, I focus on the structural integrity 
+        and efficiency of data systems. I enjoy the challenge of taking unorganized information 
+        and transforming it into optimized relational schemas. My technical toolkit is centered 
+        around SQL, where I practice writing complex queries, stored procedures, and triggers 
+        to ensure data consistency and high performance.
+    </p>
+
+    <p class="justified-text">
+        Beyond just writing code, I am passionate about database administration and the 
+        logical puzzle of ERD (Entity-Relationship Diagram) design. I believe that a 
+        strong database is the foundation of any successful software, and I am committed 
+        to mastering the art of managing complex data environments.
+    </p>
+    </div>
+</body>
 </html>
