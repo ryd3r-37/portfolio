@@ -1,0 +1,98 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 1.5rem;
+    line-height: 1.6;
+    background: #f1e2cc;
+    color: #2f2b27;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    background: #fff;
+    border: 1px solid #d6bfa7;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+
+nav a {
+    color: #2f2b27;
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    background: #efe0d2;
+    transition: background 0.2s ease;
+}
+
+nav a:hover {
+    background: #e1c9b0;
+}
+
+h1 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+}
+
+section {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 1px solid #e1cdbe;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #d6bfa7;
+    background: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.stack-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
