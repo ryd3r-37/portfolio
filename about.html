@@ -1,116 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Juliane Cyruz Diaz | Web Portfolio</title>
-        <style>
-        
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            min-height: 100vh;
-            padding: 1.5rem;
-            line-height: 1.6;
-            background: #f1e2cc;
-            color: #2f2b27;
-        }
-        .page {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        nav {
-            display: flex;
-            gap: 0.75rem;
-            flex-wrap: wrap;
-            background: #fff;
-            border: 1px solid #d6bfa7;
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-        }
-        nav a {
-            color: #2f2b27;
-            text-decoration: none;
-            padding: 0.6rem 1rem;
-            border-radius: 0.5rem;
-            background: #efe0d2;
-            transition: background 0.2s ease;
-        }
-        nav a:hover {
-            background: #e1c9b0;
-        }
-        .hero {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            align-items: center;
-            margin-top: 1.5rem;
-        }
-        .profile-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 1px solid #d6bfa7;
-            background: #fff;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        section {
-            margin-top: 1.5rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 0.5rem;
-            border: 1px solid #e1cdbe;
-        }
-    </style>
-    </head>
-    <body>
-        
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Juliane Cyruz Diaz</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Juliane Cyruz Diaz | About</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
 </head>
-<body>
-    <div class="page">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="techstack.html">Tech Stack</a>
-            <a href="certifications.html">Certifications</a>
-        </nav>
 
-        <div class="hero">
-            <img src="img/jisi.png" alt="Juliane Cyruz Diaz" class="profile-photo">
-            <div>
-                <h1>Hello my name is</h1>
-                <p>Juliane Cyruz Diaz.</p>
-            </div>
-        </div>
+<body class="bg-[#0f0f10] text-[#ddd] flex min-h-screen flex-col md:flex-row">
 
-        <section>
-            <h2 class="section-header">About Me</h2>
-    <hr class="card-separator">
-    
-    <p class="justified-text">
-        As an IT student specializing in Database Management, I focus on the structural integrity 
-        and efficiency of data systems. I enjoy the challenge of taking unorganized information 
-        and transforming it into optimized relational schemas. My technical toolkit is centered 
-        around SQL, where I practice writing complex queries, stored procedures, and triggers 
-        to ensure data consistency and high performance.
-    </p>
-
-    <p class="justified-text">
-        Beyond just writing code, I am passionate about database administration and the 
-        logical puzzle of ERD (Entity-Relationship Diagram) design. I believe that a 
-        strong database is the foundation of any successful software, and I am committed 
-        to mastering the art of managing complex data environments.
-    </p>
+  <div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex md:flex-col flex-row md:justify-center items-center gap-4">
+    <div class="w-20 h-20 bg-[#2a2a2a] rounded-[14px] flex items-center justify-center text-xs text-[#777] border border-[#333]">
+      Logo
     </div>
+
+    <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
+      Menu
+    </div>
+
+    <div class="flex md:flex-col flex-row items-center gap-3 md:gap-2">
+      <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
+      <a href="about.html" class="text-sm text-[#ff3b3b] transition hover:translate-x-1">About</a>
+      <a href="techstack.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
+      <a href="certifications.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
+    </div>
+  </div>
+
+  <div class="flex-1 flex items-center justify-center p-5 md:p-10">
+
+    <div class="w-full max-w-[850px] rounded-[18px] border border-[#2a2a2a] p-8 md:p-12 bg-[linear-gradient(rgba(20,20,22,0.92),rgba(20,20,22,0.92)),url('images/background/persona.png')] bg-cover bg-center">
+      
+      <section class="max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold text-[#ff3b3b] mb-4 text-center">About Me</h2>
+        
+        <hr class="border-[#2a2a2a] mb-8">
+        
+        <div class="space-y-6 text-[#bbb] leading-relaxed text-justify">
+          <p>
+            As an IT student specializing in Database Management, I focus on the structural integrity 
+            and efficiency of data systems. I enjoy the challenge of taking unorganized information 
+            and transforming it into optimized relational schemas. My technical toolkit is centered 
+            around SQL, where I practice writing complex queries, stored procedures, and triggers 
+            to ensure data consistency and high performance.
+          </p>
+
+          <p>
+            Beyond just writing code, I am passionate about database administration and the 
+            logical puzzle of ERD (Entity-Relationship Diagram) design. I believe that a 
+            strong database is the foundation of any successful software, and I am committed 
+            to mastering the art of managing complex data environments.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
 </body>
 </html>
-
