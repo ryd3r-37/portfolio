@@ -1,37 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Stacks</title>
-    <link rel="stylesheet" href="templatemo-scholar.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8" />
+<title>Juliane Cyruz Diaz | Tech Stack</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body {
+  font-family: "Inter", sans-serif;
+}
+</style>
 </head>
-<body class="page"> 
-    <header class="header-area header-sticky">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="techstack.html">Tech Stack</a>
-            <a href="certifications.html">Certifications</a>
-        </nav>
-    </header>
 
-    <div class="container">
-        <div class="hero">
-            <h1>TECHNICAL STACK</h1>
+<body class="bg-[#0f0f10] text-[#ddd] flex min-h-screen flex-col md:flex-row">
+
+<div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex md:flex-col flex-row md:justify-center items-center gap-4">
+
+  <div class="w-20 h-20 bg-[#2a2a2a] rounded-[14px] flex items-center justify-center text-xs text-[#777] border border-[#333]">
+    Logo
+  </div>
+
+  <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
+    Menu
+  </div>
+
+  <div class="flex md:flex-col flex-row items-center gap-3 md:gap-2">
+    <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
+    <a href="about.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">About</a>
+    <a href="tech-stack.html" class="text-sm text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
+    <a href="certifications.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
+  </div>
+
+</div>
+
+<div class="flex-1 flex items-center justify-center p-5 md:p-10">
+
+  <div class="w-full max-w-[850px] rounded-[18px] border border-[#2a2a2a] p-8 md:p-12 bg-[linear-gradient(rgba(20,20,22,0.92),rgba(20,20,22,0.92)),url('images/background/persona.png')] bg-cover bg-center text-center">
+
+    <h1 class="text-lg md:text-xl font-bold text-[#ff3b3b] bg-[#2a2a2a] inline-block px-6 py-3 rounded-full shadow-md mb-10">
+      Tech Stack
+    </h1>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/html.png" class="w-full h-full object-contain" alt="HTML">
         </div>
+        <p class="text-sm mt-2">HTML</p>
+      </div>
 
-        <section class="stack-section">
-            <div class="text-content">
-                <h2>Database Management & SQL</h2>
-            </div>
-            
-            <div class="image-content">
-                <img src="img/" alt="Database Schema Diagram">
-            </div>
-        </section>
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/css.png" class="w-full h-full object-contain" alt="CSS">
+        </div>
+        <p class="text-sm mt-2">CSS</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/js.png" class="w-full h-full object-contain" alt="JavaScript">
+        </div>
+        <p class="text-sm mt-2">JavaScript</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/c.png" class="w-full h-full object-contain" alt="C">
+        </div>
+        <p class="text-sm mt-2">C</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/java.png" class="w-full h-full object-contain" alt="Java">
+        </div>
+        <p class="text-sm mt-2">Java</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/sql.png" class="w-full h-full object-contain" alt="MySQL">
+        </div>
+        <p class="text-sm mt-2">MySQL</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/postgresql.png" class="w-full h-full object-contain" alt="PostgreSQL">
+        </div>
+        <p class="text-sm mt-2">PostgreSQL</p>
+      </div>
+
     </div>
+
+    <h1 class="text-lg md:text-xl font-bold text-[#ff3b3b] bg-[#2a2a2a] inline-block px-6 py-3 rounded-full shadow-md mt-14 mb-10">
+      Dev Tools
+    </h1>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-[750px] mx-auto">
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/vscode.png" class="w-full h-full object-contain" alt="VS Code">
+        </div>
+        <p class="text-sm mt-2">VS Code</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/git.png" class="w-full h-full object-contain" alt="Git">
+        </div>
+        <p class="text-sm mt-2">Git</p>
+      </div>
+
+      <div class="bg-white/5 rounded-xl p-4 border border-white/10 flex flex-col items-center transition duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,59,59,0.4)]">
+        <div class="w-12 h-12 flex items-center justify-center">
+          <img src="images/tech-stack/github.png" class="w-full h-full object-contain" alt="GitHub">
+        </div>
+        <p class="text-sm mt-2">GitHub</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 </body>
 </html>
