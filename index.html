@@ -1,193 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Juliane Cyruz Diaz | Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>Juliane Cyruz Diaz | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
-
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-
-body {
-font-family: "Inter", sans-serif;
-background: #0f0f10;
-color: #ddd;
-display: flex;
-min-height: 100vh;
-}
-
-/* SIDEBAR */
-.sidebar {
-position: sticky;
-top: 0;
-height: 100vh;
-width: 230px;
-background: #141416;
-border-right: 1px solid #2a2a2a;
-padding: 20px;
-
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 15px;
-
-flex-shrink: 0;
-}
-
-.sidebar-logo {
-width: 80px;
-height: 80px;
-background: #2a2a2a;
-border-radius: 14px;
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 12px;
-color: #777;
-border: 1px solid #333;
-}
-
-.sidebar-title {
-font-size: 16px;
-font-weight: 700;
-color: #ff3b3b;
-}
-
-.nav-group {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 8px;
-}
-
-.nav-link {
-font-size: 14px;
-color: #bbb;
-transition: 0.2s;
-}
-
-.nav-link:hover {
-color: #ff3b3b;
-transform: translateX(3px);
-}
-
-/* MAIN */
-.page-content {
-flex: 1;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 40px;
-}
-
-.profile-card {
-background: 
-linear-gradient(rgba(20,20,22,0.85), rgba(20,20,22,0.85)),
-url("images/background/persona.png");
-border: 1px solid #2a2a2a;
-border-radius: 18px;
-padding: 40px 30px;
-width: 100%;
-max-width: 850px;
-text-align: center;
-}
-
-.profile-image {
-width: 240px;
-height: 240px;
-border-radius: 50%;
-object-fit: cover;
-border: 4px solid #2a2a2a;
-margin-bottom: 25px;
-}
-
-.profile-name {
-font-size: 32px;
-font-weight: 700;
-color: #ff3b3b;
-margin-bottom: 8px;
-}
-
-.profile-role {
-font-size: 14px;
-color: #aaa;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-body {
-flex-direction: column;
-}
-
-.sidebar {
-width: 100%;
-height: auto;
-
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-
-padding: 15px 20px;
-}
-
-.nav-group {
-flex-direction: row;
-gap: 12px;
-}
-
-.sidebar-logo {
-margin-right: auto;
-}
-
-.sidebar-title {
-display: none;
-}
-
-.page-content {
-padding: 20px;
-}
-}
-</style>
-
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-[#0f0f10] text-[#ddd] flex min-h-screen flex-col md:flex-row">
 
-<div class="sidebar">
+  <div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex md:flex-col flex-row md:justify-center items-center gap-4">
 
-<div class="sidebar-logo">Logo</div>
+    <div class="w-20 h-20 bg-[#2a2a2a] rounded-[14px] flex items-center justify-center text-xs text-[#777] border border-[#333]">
+      Logo
+    </div>
 
-<div class="sidebar-title">Menu</div>
+    <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
+      Menu
+    </div>
 
-<div class="nav-group">
-<a class="nav-link" href="index.html">Home</a>
-<a class="nav-link" href="about.html">About</a>
-<a class="nav-link" href="techstack.html">Tech Stack</a>
-<a class="nav-link" href="certifications.html">Certifications</a>
-</div>
+    <div class="flex md:flex-col flex-row items-center gap-3 md:gap-2">
+      <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
+      <a href="about.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">About</a>
+      <a href="techstack.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
+      <a href="certifications.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
+    </div>
 
-</div>
+  </div>
 
-<div class="page-content">
+  <div class="flex-1 flex items-center justify-center p-5 md:p-10">
 
-<div class="profile-card">
+    <div class="w-full max-w-[850px] text-center rounded-[18px] border border-[#2a2a2a] p-10 bg-[linear-gradient(rgba(20,20,22,0.85),rgba(20,20,22,0.85)),url('images/background/persona.png')] bg-cover bg-center">
 
-<img src="images/jisi.png" alt="profile" class="profile-image">
+      <img src="images/jisi.png" alt="profile" class="w-60 h-60 rounded-full object-cover border-4 border-[#2a2a2a] mx-auto mb-6" />
 
-<div class="profile-name">Juliane Cyruz Diaz</div>
-<div class="profile-role">IT Student • SDCA • Database</div>
+      <h1 class="text-3xl font-bold text-[#ff3b3b] mb-2">Juliane Cyruz Diaz</h1>
 
-</div>
+      <p class="text-sm text-[#aaa]">IT Student • SDCA • Database</p>
 
-</div>
+      <div class="flex justify-center gap-5 mt-4">
+
+        <a href="https://github.com/ryd3r-37 " target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#bbb] hover:bg-[#ff3b3b] hover:text-white transition hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5C5.7.5.7 5.7.7 12.2c0 5.2 3.4 9.6 8.2 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.6-4-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.8 2.1 2.9 2.9.1-.7.4-1.2.8-1.5-2.7-.3-5.6-1.4-5.6-6.2 0-1.4.5-2.5 1.2-3.4-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.3a11 11 0 0 1 6 0C15.9 5 16.9 5.3 16.9 5.3c.6 1.6.2 2.8.1 3.1.8.9 1.2 2 1.2 3.4 0 4.8-2.9 5.9-5.6 6.2.5.4.9 1.1.9 2.3v3.4c0 .3.2.7.8.6 4.8-1.6 8.2-6 8.2-11.2C23.3 5.7 18.3.5 12 .5z" />
+          </svg>
+        </a>
+
+        <a href="#" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#bbb] hover:bg-[#ff3b3b] hover:text-white transition hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6v5.8zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4z" />
+          </svg>
+        </a>
+
+        <a href="contacts.html" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-[#bbb] hover:bg-[#ff3b3b] hover:text-white transition hover:scale-110">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
