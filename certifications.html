@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <title>Juliane Cyruz Diaz | Certifications</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: "Inter", sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-[#f1e2cc]"></body>
-    <div class="page">
-        <nav class="p-4">
-            <a href="index.html" class="px-3 py-2">Home</a>
-            <a href="about.html" class="px-3 py-2">About</a>
-            <a href="tech-stack.html" class="px-3 py-2">Tech Stack</a>
-            <a href="certifications.html" class="px-3 py-2">Certifications</a>
-        </nav>
 
-        <section class="py-10">
-            <div class="flex flex-wrap justify-center gap-10">
-                
-                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/3 p-6 text-center bg-[#2E1B0E] rounded-xl hover:scale-105 transition-transform shadow-xl">
-                    <img src="img/CertWord_page-0001.jpg" 
-                         class="w-full rounded-xl cursor-pointer" 
-                         onclick="openModal(this.src)" 
-                         alt="MS Word Certificate">
-                    <p class="font-bold text-white pt-4 pb-2 text-2xl">MS Word Associate</p>
-                    <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
-                       target="_blank" 
-                       class="inline-block mt-4 px-6 py-2 bg-[#f1e2cc] text-black font-semibold rounded-lg hover:bg-[#6EC471] transition">
-                       Verify certificate
-                    </a>
-                </div>
+<body class="bg-[#0f0f10] text-[#ddd] flex min-h-screen flex-col md:flex-row">
 
-                
-                <div class="w-full sm:w-1/2 md:w-5/12 lg:w-1/3 p-6 text-center bg-[#2E1B0E] rounded-xl hover:scale-105 transition-transform shadow-xl">
-                    <img src="img/CertJava_page-0001.jpg" 
-                         class="w-full rounded-xl cursor-pointer" 
-                         onclick="openModal(this.src)" 
-                         alt="Java Specialist Certificate">
-                    <p class="font-bold text-white pt-4 pb-2 text-2xl">Specialist in Java</p>
-                    <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
-                       target="_blank" 
-                       class="inline-block mt-4 px-6 py-2 bg-[#f1e2cc] text-black font-semibold rounded-lg hover:bg-[#6EC471] transition">
-                       Verify certificate
-                    </a>
-                </div>
-            </div>
-        </section>
+  <!-- Sidebar Navigation -->
+  <div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex md:flex-col flex-row md:justify-center items-center gap-4">
+    <a href="index.html" class="block transition hover:scale-105 active:scale-95">
+      <div class="w-20 h-20 bg-[#2a2a2a] rounded-[14px] flex items-center justify-center border border-[#333] overflow-hidden">
+        <img src="images/background/logo.png" alt="Logo" class="w-full h-full object-cover" />
+      </div>
+    </a>
+
+    <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
+      Menu
     </div>
+
+    <div class="flex md:flex-col flex-row items-center gap-3 md:gap-2">
+      <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
+      <a href="about.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">About</a>
+      <a href="tech-stack.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
+      <a href="certifications.html" class="text-sm text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="flex-1 flex items-center justify-center p-5 md:p-10">
+
+    <div class="w-full max-w-[950px] rounded-[18px] border border-[#2a2a2a] p-8 md:p-12 bg-[linear-gradient(rgba(20,20,22,0.92),rgba(20,20,22,0.92)),url('images/background/persona.png')] bg-cover bg-center">
+      
+      <section class="mx-auto">
+        <h2 class="text-3xl font-bold text-[#ff3b3b] mb-4 text-center">Certifications</h2>
+        <hr class="border-[#2a2a2a] mb-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- MS Word Card -->
+          <div class="bg-[#1a1a1c] border border-[#2a2a2a] p-5 rounded-xl hover:border-[#ff3b3b]/50 transition-all group">
+            <div class="overflow-hidden rounded-lg mb-4">
+              <img src="images/CertWord_page-0001.jpg" 
+                   class="w-full h-auto cursor-pointer group-hover:scale-105 transition-transform duration-300" 
+                   onclick="openModal(this.src)" 
+                   alt="MS Word Certificate">
+            </div>
+            <h3 class="font-bold text-white text-xl mb-3">MS Word Associate</h3>
+            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+               target="_blank" 
+               class="inline-block w-full py-2 bg-[#ff3b3b] text-white text-center font-semibold rounded-lg hover:bg-[#d32f2f] transition">
+               Verify certificate
+            </a>
+          </div>
+
+          <!-- Java Specialist Card -->
+          <div class="bg-[#1a1a1c] border border-[#2a2a2a] p-5 rounded-xl hover:border-[#ff3b3b]/50 transition-all group">
+            <div class="overflow-hidden rounded-lg mb-4">
+              <img src="images/CertJava_page-0001.jpg" 
+                   class="w-full h-auto cursor-pointer group-hover:scale-105 transition-transform duration-300" 
+                   onclick="openModal(this.src)" 
+                   alt="Java Specialist Certificate">
+            </div>
+            <h3 class="font-bold text-white text-xl mb-3">Specialist in Java</h3>
+            <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
+               target="_blank" 
+               class="inline-block w-full py-2 bg-[#ff3b3b] text-white text-center font-semibold rounded-lg hover:bg-[#d32f2f] transition">
+               Verify certificate
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- Modal for full-size viewing -->
+  <div id="certModal" class="fixed inset-0 z-50 hidden bg-black/90 flex items-center justify-center p-5" onclick="this.classList.add('hidden')">
+    <img id="modalImg" class="max-w-full max-h-full rounded-lg shadow-2xl border-2 border-[#2a2a2a]">
+  </div>
+
+  <script>
+    function openModal(src) {
+      const modal = document.getElementById('certModal');
+      const modalImg = document.getElementById('modalImg');
+      modalImg.src = src;
+      modal.classList.remove('hidden');
+    }
+  </script>
+
 </body>
 </html>
