@@ -7,6 +7,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet">
 
   <style>
     body {
@@ -17,27 +18,45 @@
 
 <body class="bg-[#0f0f10] text-[#ddd] flex min-h-screen flex-col md:flex-row">
 
-  <!-- Sidebar Navigation -->
-  <div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex md:flex-col flex-row md:justify-center items-center gap-4">
+  <div class="sticky top-0 h-auto md:h-screen w-full md:w-[230px] bg-[#141416] border-b md:border-b-0 md:border-r border-[#2a2a2a] p-4 md:p-5 flex flex-row md:flex-col items-center justify-between md:justify-center gap-4 z-50">
+
     <a href="index.html" class="block transition hover:scale-105 active:scale-95">
       <div class="w-20 h-20 bg-[#2a2a2a] rounded-[14px] flex items-center justify-center border border-[#333] overflow-hidden">
         <img src="images/background/logo.png" alt="Logo" class="w-full h-full object-cover" />
       </div>
     </a>
 
-    <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
-      Menu
+    <input type="checkbox" id="nav-toggle" class="peer hidden" />
+
+    <label for="nav-toggle" class="md:hidden cursor-pointer flex flex-col gap-1.5">
+      <span class="block w-6 h-0.5 bg-[#bbb] transition-all peer-checked:rotate-45 peer-checked:translate-y-2"></span>
+      <span class="block w-6 h-0.5 bg-[#bbb] transition-all peer-checked:opacity-0"></span>
+      <span class="block w-6 h-0.5 bg-[#bbb] transition-all peer-checked:-rotate-45 peer-checked:-translate-y-2"></span>
+    </label>
+
+    <div class="hidden peer-checked:flex md:flex flex-col items-center gap-4 absolute md:static top-full left-0 w-full bg-[#141416] md:bg-transparent p-5 md:p-0 border-b border-[#2a2a2a] md:border-none">
+      <div class="text-base font-bold text-[#ff3b3b] hidden md:block">
+        Menu
+      </div>
+
+      <div class="flex flex-col items-center gap-3 md:gap-2">
+        <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
+        <a href="about.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">About</a>
+        <a href="tech-stack.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
+        <a href="certifications.html" class="text-sm text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
+      </div>
     </div>
 
-    <div class="flex md:flex-col flex-row items-center gap-3 md:gap-2">
-      <a href="index.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Home</a>
-      <a href="about.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">About</a>
-      <a href="tech-stack.html" class="text-sm text-[#bbb] hover:text-[#ff3b3b] transition hover:translate-x-1">Tech Stack</a>
-      <a href="certifications.html" class="text-sm text-[#ff3b3b] transition hover:translate-x-1">Certifications</a>
-    </div>
   </div>
 
-  <!-- Main Content Area -->
+  <div class="ml-auto md:ml-0 md:absolute md:top-4 md:right-4 z-10">
+    <label for="switch" class="switch">
+      <input id="switch" type="checkbox" />
+      <span class="slider"></span>
+      <span class="decoration"></span>
+    </label>
+  </div>
+
   <div class="flex-1 flex items-center justify-center p-5 md:p-10">
 
     <div class="w-full max-w-[950px] rounded-[18px] border border-[#2a2a2a] p-8 md:p-12 bg-[linear-gradient(rgba(20,20,22,0.92),rgba(20,20,22,0.92)),url('images/background/persona.png')] bg-cover bg-center">
@@ -48,7 +67,6 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <!-- MS Word Card -->
           <div class="bg-[#1a1a1c] border border-[#2a2a2a] p-5 rounded-xl hover:border-[#ff3b3b]/50 transition-all group">
             <div class="overflow-hidden rounded-lg mb-4">
               <img src="images/CertWord_page-0001.jpg" 
@@ -56,15 +74,14 @@
                    onclick="openModal(this.src)" 
                    alt="MS Word Certificate">
             </div>
-            <h3 class="font-bold text-white text-xl mb-3">MS Word Associate</h3>
+            <h3 class="font-bold text-white text-xl mb-3 text-center">MS Word Associate</h3>
             <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
                target="_blank" 
                class="inline-block w-full py-2 bg-[#ff3b3b] text-white text-center font-semibold rounded-lg hover:bg-[#d32f2f] transition">
-               Verify certificate
+               Verify Certificate
             </a>
           </div>
 
-          <!-- Java Specialist Card -->
           <div class="bg-[#1a1a1c] border border-[#2a2a2a] p-5 rounded-xl hover:border-[#ff3b3b]/50 transition-all group">
             <div class="overflow-hidden rounded-lg mb-4">
               <img src="images/CertJava_page-0001.jpg" 
@@ -72,11 +89,11 @@
                    onclick="openModal(this.src)" 
                    alt="Java Specialist Certificate">
             </div>
-            <h3 class="font-bold text-white text-xl mb-3">Specialist in Java</h3>
+            <h3 class="font-bold text-white text-xl mb-3 text-center">Specialist in Java</h3>
             <a href="https://www.certiport.com/portal/pages/credentialverification.aspx"
                target="_blank" 
                class="inline-block w-full py-2 bg-[#ff3b3b] text-white text-center font-semibold rounded-lg hover:bg-[#d32f2f] transition">
-               Verify certificate
+               Verify Certificate
             </a>
           </div>
 
